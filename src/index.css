@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    * {
+        @apply m-0 p-0 box-border
+    }
+
+    body {
+        @apply bg-slate-200;
+    }
+
+    .dropdown {
+        @apply w-full lg:max-w-[296px] cursor-pointer;
+    }
+
+    .dropdown-btn {
+        @apply flex h-[64px] items-center px-[18px] border rounded-lg;
+    }
+
+    .dropdown-icon-primary {
+        @apply text-2xl mr-[18px] text-cyan-700;
+    }
+
+    .dropdown-icon-secondary {
+        @apply text-2xl ml-auto text-cyan-700;
+    }
+
+    .dropdown-menu {
+        @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
+    }
+    
+    .main-footer {
+        @apply mb-2
+      }
+      
+      .footer-logo-box {
+        @apply text-center mb-8
+      }
+      
+      .footer-logo {
+        @apply w-80 mx-auto my-10 object-contain
+      }
+      
+      .sub-footer {
+        @apply lg:columns-2 lg:gap-y-2 md:columns-1 md:gap-y-1
+      }
+
+      .footer-list {
+        @apply border-t-2 border-solid border-t-cyan-500 pt-2 inline-block list-none
+      }
+      
+      .footer-item {
+        @apply inline-block
+      }
+      
+      .footer-item:not(:last-child) {
+        @apply mr-2
+      }
+
+      .footer-link:link,
+      .footer-link:visited {
+        @apply text-black inline-block font-medium no-underline tracking-wider uppercase transition
+        }
+
+       .footer-link:hover {
+        @apply transition text-cyan-500 tracking-wider drop-shadow-md shadow-cyan-700
+        }
+
+        .footer-link:active {
+        @apply text-slate-200 tracking-wider
+        }
+
+        .footer-copyright {
+            @apply border-t-2 border-solid border-cyan-500 pt-2 text-gray-500 text-lg tracking-wide font-medium float-right w-full
+        }
+}
