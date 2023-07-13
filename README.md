@@ -1,2 +1,2 @@
 # MyRealtor
-MyRealtor is a front-end website for connecting you with your dream house.
+MyRealtor is a landing page for helping you find your dream rental home.
